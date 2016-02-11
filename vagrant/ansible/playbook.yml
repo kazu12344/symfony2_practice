@@ -14,7 +14,7 @@
     - php7-cli
     - apache
     - php7
-    - mariadb
+#    - mariadb
     - composer
     - phpcommon
     - app
