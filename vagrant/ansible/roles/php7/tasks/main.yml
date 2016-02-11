@@ -1,0 +1,9 @@
+- name: Install php7.0
+  sudo: yes
+#  yum: pkg=php state=latest enablerepo=remi-php56
+  yum: pkg=php state=latest enablerepo=remi-php70
+
+- name: ensure timezone is set in apache2 php.ini
+  lineinfile: dest=/etc/php.ini
+              regexp='date.timezone ='
+              line='date.timezone = {{ timezone }}'

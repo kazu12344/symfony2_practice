@@ -1,0 +1,6 @@
+---
+    php_ppa: php5-5.6
+    doc_root: /var/www/vhosts/symfony2_practice/web/
+    sys_packages: ["vim","git"]
+    dist: precise
+    php_packages: ["php-mcrypt", "php-pecl-xdebug", "php-mysql", "php-pdo", "php-mbstring", "php-xml", "php-process", "php-intl", "php-pecl-apcu"]

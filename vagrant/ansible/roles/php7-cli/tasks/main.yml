@@ -1,0 +1,9 @@
+- name: Install php-cli
+  sudo: yes
+#  yum: pkg=php-cli state=latest enablerepo=remi-php56
+  yum: pkg=php-cli state=latest enablerepo=remi-php70
+
+- name: ensure timezone is set in cli php.ini
+  lineinfile: dest=/etc/php.ini
+              regexp='date.timezone ='
+              line='date.timezone = {{ timezone }}'
